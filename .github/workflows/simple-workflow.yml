@@ -26,8 +26,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Login
-        with:
-          super_secret: ${{ secrets.TEST_PASSWORD }}
         env:
           super_secret: ${{ secrets.TEST_PASSWORD }}
         run: |
